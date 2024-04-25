@@ -1,7 +1,6 @@
 name: allegro_sim
 channels:
-  - conda-forge
-  - pytorch
+  - defaults
 dependencies:
   - python=3.7
   - pip
@@ -11,21 +10,29 @@ dependencies:
   - pytorch=1.8.1
   - torchvision=0.9.1
   - cudatoolkit=11.1
-  - opencv=4.6
   - pyyaml=6.0
-  - pytorch-lightning=1.7.7
   - einops=0.4.1
-  - black
-  - isort
-  - pandas=1.5.1
-  - seaborn=0.12.1
-  - termcolor=2.1.0
-  - timm=0.4.12
-  - omegaconf
-  - h5py
-  - ikpy
-  - wandb
-  - hydra-core
-  - ipdb
-  - scipy>=1.5.0
-  - tensorboard>=2.2.1
+  - pip:
+      - black
+      - isort
+      - pandas
+      - seaborn
+      - termcolor
+      - timm
+      - opencv-python
+      - omegaconf
+      - h5py
+      - ikpy
+      - wandb
+      - hydra-core
+      - ipdb
+      - scipy>=1.5.0
+      - tensorboard>=2.2.1
+      - scikit-image
+      - POT
+      - info-nce-pytorch
+      - blosc
+      - scikit-learn
+      - rospkg
+      - pyrealsense2
+      - shapely
